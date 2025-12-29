@@ -1,33 +1,57 @@
-const projects = [
+const projectsData = [
   {
+    id: 1,
     title: "School Management Application",
-    description: "",
+    description: "School",
+    image: "",
     githubLink: "",
     liveUrl: "",
     tools: [],
   },
   {
+    id: 2,
     title: "MERN Real Estate",
-    description: "",
+    description: "Estate",
+    image: "",
     githubLink: "",
     liveUrl: "",
     tools: [],
   },
-  { title: "", description: "", githubLink: "", liveUrl: "", tools: [] },
-  { title: "", description: "", githubLink: "", liveUrl: "", tools: [] },
+  {
+    id: 3,
+    title: "",
+    description: "",
+    image: "",
+    githubLink: "",
+    liveUrl: "",
+    tools: [],
+  },
+  {
+    id: 4,
+    title: "",
+    description: "",
+    image: "",
+    githubLink: "",
+    liveUrl: "",
+    tools: [],
+  },
 ];
 
-const certifications = [
+const certificationsData = [
   {
+    id: 1,
     title: "C# Beginner Certification",
+    image: "",
     certificateSiteUrl:
       "https://www.udemy.com/certificate/UC-e8d17b9e-7b38-4a09-8cee-ba6986b08616/",
   },
   {
+    id: 2,
     title: "Fullstack MERN Real Estate",
+    image: "",
     certificateSiteUrl:
       "https://www.udemy.com/certificate/UC-37c0f482-4aca-4684-b31c-2685df5ebfeb/",
   },
 ];
 
-export { projects, certifications };
+export { projectsData, certificationsData };
