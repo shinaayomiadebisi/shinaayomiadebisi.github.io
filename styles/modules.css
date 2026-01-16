@@ -1,3 +1,14 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* Flex Property */
 .flex {
   display: flex;
 }
@@ -36,6 +47,39 @@
 
 .gap-4 {
   gap: 1rem;
+}
+
+/* Text Property */
+.text-base {
+  font-size: 1rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* Spacing Property */
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .gradient-title {
