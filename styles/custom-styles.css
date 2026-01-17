@@ -1,0 +1,28 @@
+.projects-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* max-width: 1200px; /* The grid will not exceed 1200px in width */
+  gap: 1.5rem;
+}
+.project-card {
+  /* transition: all 0.3s ease; */
+}
+.project-card .card-header{
+  position: relative;
+}
+.project-card .card-header .direction-wrapper{
+  position: absolute;
+  bottom: 4rem;
+  right: 0;
+  transition: all 0.3s ease;
+}
+.project-card:hover .card-header .direction-wrapper{
+  right: 5rem;
+}
+
+.certificates-wrapper {
+  background-color: khaki;
+}
+
+.certificate-card {
+}
