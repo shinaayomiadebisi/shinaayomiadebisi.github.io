@@ -53,27 +53,34 @@ const projectsData = [
 const certificationsData = [
   {
     id: 1,
+    title: "Legacy Responsive Web Design V8",
+    image: "",
+    certificateSiteUrl:
+      "https://www.freecodecamp.org/certification/fcc1a77dbe6-4a33-4918-8f21-0026456bc832/responsive-web-design",
+  },
+  {
+    id: 2,
     title: "Fullstack MERN Real Estate",
     image: "",
     certificateSiteUrl:
       "https://www.udemy.com/certificate/UC-37c0f482-4aca-4684-b31c-2685df5ebfeb/",
   },
   {
-    id: 2,
+    id: 3,
     title: "C# Beginner Certification",
     image: "",
     certificateSiteUrl:
       "https://www.udemy.com/certificate/UC-e8d17b9e-7b38-4a09-8cee-ba6986b08616",
   },
   {
-    id: 3,
+    id: 4,
     title: "C# Intermediate Certification",
     image: "",
     certificateSiteUrl:
       "https://www.udemy.com/certificate/UC-5aa8e439-753a-4d61-8bf5-a06f31bfbf97",
   },
   {
-    id: 4,
+    id: 5,
     title: "C# Intermediate Certification",
     image: "",
     certificateSiteUrl:
