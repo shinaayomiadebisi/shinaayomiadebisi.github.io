@@ -33,12 +33,18 @@ dayNight.addEventListener("click", () => {
   dayNight.querySelector("i").classList.toggle("fa-sun");
   dayNight.querySelector("i").classList.toggle("fa-moon");
   document.body.classList.toggle("dark");
+  window.sessionStorage.setItem(
+    "darkMode",
+    document.body.classList.toString("dark")
+  );
 });
 
 window.addEventListener("load", () => {
-  if (document.body.classList.contains("dark")) {
-    dayNight.querySelector("i").classList.add("fa-sun");
+  const darkModeStatus = sessionStorage.getItem("darkMode");
+  if (document.body.classList.contains("dark") || darkModeStatus) {
+    dayNight.querySelector("i").classList.replace("fa-moon", "fa-sun");
+    document.body.classList.add("dark");
   } else {
-    dayNight.querySelector("i").classList.add("fa-moon");
+    dayNight.querySelector("i").classList.replace("fa-sun", "fa-moon");
   }
 });
