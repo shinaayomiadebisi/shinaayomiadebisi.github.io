@@ -13,9 +13,14 @@ export class UI {
     );
   }
 
-  renderIcon() {
+  renderIcon(tool) {
     const card = document.createElement("span");
-    card.classList = `fa`;
+    if (tool.class) {
+      card.classList = `fa-brands ${tool.class}`;
+    } else {
+      card.textContent = tool.name;
+      card.className = "";
+    }
 
     return card;
   }
@@ -23,10 +28,15 @@ export class UI {
   createProjectCard(project) {
     console.log("project", project);
     const card = this.projectCard.cloneNode(true);
+    card.getElementsByTagName("img")[0].src = project.image;
     card.getElementsByTagName("h4")[0].innerHTML = project.title;
     card.getElementsByClassName("description")[0].textContent =
       project.description;
-    card.querySelector(".project-tools");
+    project.tools.forEach((tool) => {
+      const toolCard = this.renderIcon(tool);
+      card.querySelector(".project-tools").appendChild(toolCard);
+    });
+
     card.dataset.project = project.id;
     card.hidden = false;
 
