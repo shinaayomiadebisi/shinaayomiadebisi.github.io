@@ -6,17 +6,20 @@
 }
 .project-card {
   /* transition: all 0.3s ease; */
+  background-color: blueviolet;
+  border-radius: 0.875rem;
 }
-.project-card .card-header{
+.project-card .card-header {
   position: relative;
 }
-.project-card .card-header .direction-wrapper{
+.project-card .card-header .direction-wrapper {
   position: absolute;
   bottom: 4rem;
   right: 0;
+  background-color: antiquewhite;
   transition: all 0.3s ease;
 }
-.project-card:hover .card-header .direction-wrapper{
+.project-card:hover .card-header .direction-wrapper {
   right: 5rem;
 }
 
