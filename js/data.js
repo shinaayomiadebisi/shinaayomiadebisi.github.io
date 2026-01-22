@@ -3,13 +3,14 @@ const projectsData = [
     id: 1,
     title: "School Management Application",
     description:
-      "School management application at allow access different users of admins, parents, teachers, and students",
-    image: "../assets/projectscreenshots/screen.png",
+      "School management application that allow access different users admin, parents, teachers, and students",
+    image: "../assets/projectscreenshots/school-management-app.png",
     githubLink: "",
     liveUrl: "",
     tools: [
       { name: "Javascript", class: "fa-js" },
-      { name: "Typescript", class: "fa-ts" },
+      { name: "Node", class: "fa-node" },
+      { name: "Typescript", class: "" },
     ],
   },
   {
