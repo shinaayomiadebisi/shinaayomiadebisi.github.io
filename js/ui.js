@@ -9,7 +9,7 @@ export class UI {
     this.projectCardWrapper = document.querySelector(".projects-card-wrapper");
     this.projectCard = document.querySelector(".project-card");
     this.certificatesContainer = document.querySelector(
-      ".certificates-wrapper"
+      ".certificates-wrapper",
     );
   }
 
@@ -32,6 +32,9 @@ export class UI {
     card.getElementsByTagName("h4")[0].innerHTML = project.title;
     card.getElementsByClassName("description")[0].textContent =
       project.description;
+    card
+      .getElementsByClassName("direction-wrapper")[0]
+      .getElementsByTagName("a")[0].href = project.githubLink;
     project.tools.forEach((tool) => {
       const toolCard = this.renderIcon(tool);
       card.querySelector(".project-tools").appendChild(toolCard);
