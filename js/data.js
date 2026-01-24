@@ -63,7 +63,7 @@ const certificationsData = [
   {
     id: 2,
     title: "Fullstack MERN Real Estate",
-    image: "../assets/certificates/",
+    image: "../assets/certificates/Fullstack-Mern-Real-Estate.jpg",
     certificateSiteUrl:
       "https://www.udemy.com/certificate/UC-37c0f482-4aca-4684-b31c-2685df5ebfeb/",
   },
