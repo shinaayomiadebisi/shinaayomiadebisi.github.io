@@ -55,14 +55,15 @@ const certificationsData = [
   {
     id: 1,
     title: "Legacy Responsive Web Design V8",
-    image: "",
+    image:
+      "../assets/certificates/www.freecodecamp.org_certification_responsive-web-design.png",
     certificateSiteUrl:
       "https://www.freecodecamp.org/certification/fcc1a77dbe6-4a33-4918-8f21-0026456bc832/responsive-web-design",
   },
   {
     id: 2,
     title: "Fullstack MERN Real Estate",
-    image: "",
+    image: "../assets/certificates/",
     certificateSiteUrl:
       "https://www.udemy.com/certificate/UC-37c0f482-4aca-4684-b31c-2685df5ebfeb/",
   },
