@@ -70,7 +70,7 @@ const certificationsData = [
   {
     id: 3,
     title: "C# Beginner Certification",
-    image: "",
+    image: "..assets/certificates/C#-Beginner.jpg",
     certificateSiteUrl:
       "https://www.udemy.com/certificate/UC-e8d17b9e-7b38-4a09-8cee-ba6986b08616",
   },
