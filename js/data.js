@@ -84,7 +84,7 @@ const certificationsData = [
   {
     id: 5,
     title: "C# Intermediate Certification",
-    image: "",
+    image: "../assets/certificates/C#-Professional.jpg",
     certificateSiteUrl:
       "https://www.udemy.com/certificate/UC-9c903acb-4367-4846-8c69-aba7e38f3ee2",
   },
