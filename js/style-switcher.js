@@ -35,7 +35,7 @@ dayNight.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   window.sessionStorage.setItem(
     "darkMode",
-    document.body.classList.toString("dark")
+    document.body.classList.toString("dark"),
   );
 });
 
