@@ -1,4 +1,4 @@
-.projects-card-wrapper {
+.cards-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   /* max-width: 1200px; /* The grid will not exceed 1200px in width */
