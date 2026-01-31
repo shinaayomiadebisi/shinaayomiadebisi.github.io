@@ -44,7 +44,7 @@ const projectsData = [
     id: 5,
     title: "Fire Extinguisher",
     description: "",
-    image: "",
+    image: "../assets/projectscreenshots/fire-extinguisher.png",
     githubLink: "",
     liveUrl: "https://fire-extinguisher-rent-center-nuxt.netlify.app",
     tools: [{ name: "nuxt", class: "" }],
