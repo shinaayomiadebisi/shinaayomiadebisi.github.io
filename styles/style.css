@@ -12,10 +12,13 @@
   --purple-2: 121, 40, 202;
   --red: 255, 0, 128;
   /* font-size: 15px; */
+  /* #202124 // color, hover */
 
   --purple-3: #27004a;
   --red-2: #5a0000;
   --dark-blue: #04081f;
+  --gray-300: #d1d5db;
+  --card-bg: #ffffff;
 
   --bg-black-900: #f2f2f2;
   --bg-black-100: #fdf9ff;
@@ -45,6 +48,7 @@
   --purple-3: #c1c1c1;
   --red-2: #5a0000;
   --dark-blue: #04081f;
+  --card-bg: rgb(255 255 255 / 6%);
 
   --bg-black-900: #151515;
   --bg-black-100: #222222;
