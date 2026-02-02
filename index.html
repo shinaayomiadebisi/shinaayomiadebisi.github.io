@@ -85,7 +85,7 @@
 
       <!-- start Hero -->
       <header class="heroSection">
-        <div class="container">
+        <div class="container flex flex-col items-center">
           <h1 id="welcome">Welcome to my world</h1>
 
           <h1 style="text-align: center">
@@ -153,7 +153,9 @@
       <section>
         <div class="container">
           <div>
-            <h1 class="text-center">About me</h1>
+            <h1 class="text-center">
+              <span class="gradient-title">About me</span>
+            </h1>
             <button
               class="gradient-btn"
               onclick="
@@ -202,26 +204,23 @@
       <section>
         <div class="container">
           <h2><i class="fa-solid fa-list"></i> Projects</h2>
-          <div class="projects-card-wrapper cards-wrapper">
-            <div class="project-card" hidden>
+          <div class="projects-card-wrapper cards-container">
+            <div class="project-card card" hidden>
               <div class="card-header">
-                <img
-                  src=""
-                  alt=""
-                  style="width: 100%; aspect-ratio: 1/0.7"
-                  loading="lazy"
-                />
+                <img alt="project" loading="lazy" />
                 <div class="direction-wrapper">
                   <a target="_blank">
                     <i class="fa-brands fa-github"></i>
                   </a>
-                  <hr style="width: 100%" />
-                  <a target="_blank">
+                  <a
+                    target="_blank"
+                    style="border-top: 0.0625rem solid rgb(156 163 175)"
+                  >
                     <i class="fa-solid fa-globe"></i>
                   </a>
                 </div>
               </div>
-              <hr />
+
               <div class="card-content">
                 <h4></h4>
                 <p class="description"></p>
@@ -235,7 +234,7 @@
       <section>
         <div class="container">
           <h2><i class="fa-solid fa-list"></i> Certifications</h2>
-          <div class="certificates-wrapper cards-wrapper"></div>
+          <div class="certificates-wrapper cards-container"></div>
         </div>
       </section>
 
@@ -259,22 +258,25 @@
       <!-- start footer -->
       <footer>
         <div class="container">
-          <div class="text-center">
-            <a href="https://github.com/shinaayomi"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a href="https://x.com/DevShinaayomi"
-              ><i class="fa-brands fa-square-x-twitter"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/adebisi-abdullateef-1b49a6a1/"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a href="mailto:lateef718@gmail.com"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-            <a href="https://wa.me/+2348151991029"
-              ><i class="fa-brands fa-whatsapp"></i
-            ></a>
+          <div class="flex justify-center items-center gap-3">
+            <a href="https://github.com/shinaayomi" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://x.com/DevShinaayomi" target="_blank">
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/adebisi-abdullateef-1b49a6a1/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:lateef718@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/+2348151991029" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
           </div>
 
           <p class="text-center">
