@@ -6,13 +6,13 @@ class Portfolio {
     this.ui = new UI();
   }
 
-  init() {
+  async init() {
     try {
       this.ui.init();
 
       this.ui.renderProjectCards(projectsData);
       this.ui.renderCertificateCards(certificationsData);
-      
+
       let footer = document.getElementsByTagName("footer")[0];
       let footerDate = footer.getElementsByClassName("footerDate")[0];
       footerDate.innerHTML = new Date().getFullYear();

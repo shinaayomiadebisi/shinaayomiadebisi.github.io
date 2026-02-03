@@ -60,11 +60,16 @@ export class UI {
 
   createCertificateCard(certificate) {
     const card = document.createElement("div");
-    card.className = "certificate-card";
+    card.className = "card";
     card.innerHTML = `
-      <div>
-        <h4>${certificate.title}</h4>
-      </div>
+      
+        <div class="card-header">
+          <img src="${certificate.image}" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <h4>${certificate.title}</h4>
+        </div>
+     
     `;
 
     return card;
