@@ -29,6 +29,10 @@ h6 {
   align-items: flex-end;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .text-center {
   text-align: center;
 }
@@ -83,17 +87,15 @@ h6 {
 }
 
 .gradient-title {
+  --purple: rgba(128, 0, 128, 0.6);
+  --green: rgba(0, 128, 0, 0.5);
+  --cyan: rgba(0, 255, 255, 0.7);
   color: transparent;
-  background: linear-gradient(
-    to left,
-    var(--purple),
-    var(--green),
-    var(--cyan)
-  );
-  -webkit-background-clip: text;
+  background: var(--purple-yellow-grad);
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
+  -webkit-background-clip: text;
   -moz-text-fill-color: transparent;
+  -moz-background-clip: text;
 }
 
 .gradient-text {

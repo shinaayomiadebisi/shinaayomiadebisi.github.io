@@ -61,6 +61,16 @@
   padding: 0.75rem;
 }
 
+/* Typing */
+.typing {
+  color: transparent;
+  background: var(--purple-yellow-grad);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -moz-background-clip: text;
+}
+
 /* Footer */
 footer a {
   height: 3rem;
