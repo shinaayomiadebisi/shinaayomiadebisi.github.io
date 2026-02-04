@@ -12,6 +12,7 @@
   --purple-2: 121, 40, 202;
   --red: 255, 0, 128;
   /* font-size: 15px; */
+  --purple-yellow-grad: linear-gradient(90deg, #8000ff, #ff9533);
   /* #202124 // color, hover */
 
   --purple-3: #27004a;
@@ -20,7 +21,9 @@
   --gray-300: #d1d5db;
   --card-bg: #ffffff;
 
-  --bg-black-900: #f2f2f2;
+  /* --bg-black-900: #d1d5db; */
+  --bg-black-900: rgb(241, 245, 241);
+  /* --bg-black-900: #f2f2f2; */
   --bg-black-100: #fdf9ff;
   --bg-black-50: #e8dfec;
   --text-black-900: #302e4d;
@@ -48,9 +51,10 @@
   --purple-3: #c1c1c1;
   --red-2: #5a0000;
   --dark-blue: #04081f;
-  --card-bg: rgb(255 255 255 / 6%);
+  --card-bg: rgb(255 255 255 / 11%);
 
-  --bg-black-900: #151515;
+  --bg-black-900: #05000a;
+  /* --bg-black-900: #151515; */
   --bg-black-100: #222222;
   --bg-black-50: #393939;
   --text-black-900: #ffffff;
@@ -81,10 +85,10 @@ body {
 }
 
 .gradient-btn {
-  background: var(--btn-bg);
+  /* background: var(--btn-bg); */
   color: var(--btn-color);
   font-size: 0.85rem;
-  border: 0.1rem solid transparent;
+  /* border: 0.1rem solid transparent;
   border-image: linear-gradient(
       to right,
       var(--grad-color1),
@@ -93,15 +97,32 @@ body {
       var(--grad-color4),
       var(--grad-color5)
     )
-    10 stretch;
-  transition: 0.4s;
+    10 stretch; */
+  border-radius: 0.75rem; /* Defines the rounded corners for everything */
+  border: 0.25rem solid transparent; /* Essential: creates space for the gradient */
+
+  /* Stacking backgrounds from top (inner) to bottom (border) */
+  background: 
+    /* Layer 1: The solid background color for the content area */
+    linear-gradient(var(--btn-bg), var(--btn-bg)) padding-box,
+    /* Layer 2: The gradient that fills the border space */
+    linear-gradient(
+        to right,
+        var(--grad-color1),
+        var(--grad-color2),
+        var(--grad-color3),
+        var(--grad-color4),
+        var(--grad-color5)
+      )
+      border-box;
+  transition: all 0.4s;
   padding: 0.95rem 1.9rem;
   cursor: pointer;
 }
 
 .gradient-btn:hover {
   color: var(--btn-color-hover);
-  border-image: linear-gradient(
+  /* border-image: linear-gradient(
       to left,
       var(--grad-color1),
       var(--grad-color2),
@@ -109,7 +130,20 @@ body {
       var(--grad-color4),
       var(--grad-color5)
     )
-    10 stretch;
+    10 stretch; */
+  background: 
+    /* Layer 1: The solid background color for the content area */
+    linear-gradient(var(--btn-bg), var(--btn-bg)) padding-box,
+    /* Layer 2: The gradient that fills the border space */
+    linear-gradient(
+        to left,
+        var(--grad-color1),
+        var(--grad-color2),
+        var(--grad-color3),
+        var(--grad-color4),
+        var(--grad-color5)
+      )
+      border-box;
   transform: scale(1.05);
 }
 

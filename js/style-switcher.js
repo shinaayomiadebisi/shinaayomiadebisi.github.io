@@ -39,7 +39,7 @@ dayNight.addEventListener("click", () => {
   );
 });
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   const darkModeStatus = sessionStorage.getItem("darkMode");
   if (document.body.classList.contains("dark") || darkModeStatus) {
     dayNight.querySelector("i").classList.replace("fa-moon", "fa-sun");

@@ -6,6 +6,7 @@
 }
 .card {
   /* transition: all 0.3s ease; */
+  overflow: hidden;
   background-color: var(--card-bg);
   border-radius: 0.875rem;
   box-shadow:
@@ -33,14 +34,15 @@
   transform: translateX(100%);
   display: flex;
   flex-direction: column;
-  overflow: clip;
-  background-color: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(0.25rem);
   border: 0.0625rem solid rgb(156 163 175);
   border-radius: 0.5rem;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card:hover .card-header .direction-wrapper {
-  transform: translateX(-40%);
+  transform: translateX(-30%);
 }
 .card .card-header .direction-wrapper a {
   color: #000000;
