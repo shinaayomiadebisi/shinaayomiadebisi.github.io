@@ -33,10 +33,10 @@ export class UI {
     card.getElementsByClassName("description")[0].textContent =
       project.description;
     card
-      .getElementsByClassName("direction-wrapper")[0]
+      .getElementsByClassName("overlay-wrapper")[0]
       .getElementsByTagName("a")[0].href = project.githubLink;
     card
-      .getElementsByClassName("direction-wrapper")[0]
+      .getElementsByClassName("overlay-wrapper")[0]
       .getElementsByTagName("a")[1].href = project.liveUrl;
     project.tools.forEach((tool) => {
       const toolCard = this.renderIcon(tool);
