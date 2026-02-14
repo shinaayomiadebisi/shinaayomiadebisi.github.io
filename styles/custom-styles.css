@@ -1,3 +1,4 @@
+/* Card */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
@@ -83,7 +84,17 @@
 
 .card .card-content {
   border-top: 0.065rem solid var(--gray-300);
-  padding: 0.75rem;
+  padding: 1.55rem 0.75rem 1rem 0.75rem;
+}
+.card .card-content .title {
+  color: var(--text-black-900);
+  font-size: 1.325rem;
+  margin-bottom: 0.75rem;
+}
+.card .card-content .description {
+  color: gray;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
 }
 
 /* Typing */
@@ -97,6 +108,9 @@
 }
 
 /* Footer */
+footer {
+  padding: 2rem 0;
+}
 footer a {
   position: relative;
   height: 3rem;
