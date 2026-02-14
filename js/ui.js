@@ -67,7 +67,7 @@ export class UI {
           <img src="${certificate.image}" loading="lazy" />
         </div>
         <div class="card-content">
-          <h4>${certificate.title}</h4>
+          <h4 class="title">${certificate.title}</h4>
         </div>
      
     `;
