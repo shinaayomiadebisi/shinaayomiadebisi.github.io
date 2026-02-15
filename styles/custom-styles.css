@@ -88,13 +88,16 @@
 }
 .card .card-content .title {
   color: var(--text-black-900);
-  font-size: 1.325rem;
+  font-size: 1.25rem;
   margin-bottom: 0.75rem;
 }
 .card .card-content .description {
-  color: gray;
+  color: var(--grey-text);
   font-size: 0.95rem;
   margin-bottom: 1rem;
+  line-height: 1.2;
+  line-clamp: 1;
+  text-overflow: ellipsis;
 }
 
 /* Typing */

@@ -112,7 +112,10 @@ h6 {
 
 /* start hero section */
 .heroSection {
-  min-height: 100lvh;
+  min-height: calc(100lvh - 4rem);
+}
+.heroSection > div {
+  padding: 5rem 0;
 }
 /* end hero section */
 
