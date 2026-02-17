@@ -35,9 +35,15 @@ export class UI {
     card
       .getElementsByClassName("overlay-wrapper")[0]
       .getElementsByTagName("a")[0].href = project.githubLink;
-    card
-      .getElementsByClassName("overlay-wrapper")[0]
-      .getElementsByTagName("a")[1].href = project.liveUrl;
+
+    if (project.liveUrl) {
+      card
+        .getElementsByClassName("overlay-wrapper")[0]
+        .getElementsByTagName("a")[1].href = project.liveUrl;
+      card
+        .getElementsByClassName("overlay-wrapper")[0]
+        .getElementsByTagName("a")[1].target = "_blank";
+    }
     project.tools.forEach((tool) => {
       const toolCard = this.renderIcon(tool);
       card.querySelector(".project-tools").appendChild(toolCard);
