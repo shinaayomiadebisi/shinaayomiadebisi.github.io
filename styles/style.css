@@ -80,11 +80,14 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Poppins, sans-serif;
   background-color: var(--bg-black-900);
   color: var(--text-black-900);
-  scroll-behavior: smooth;
 }
 
 .gradient-btn {
