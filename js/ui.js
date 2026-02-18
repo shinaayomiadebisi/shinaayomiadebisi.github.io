@@ -87,4 +87,22 @@ export class UI {
       this.certificatesContainer.appendChild(card);
     });
   }
+
+  setScrollToView() {
+    document.querySelectorAll("a[data-target]").forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent the default anchor link behavior
+
+        const targetId = this.getAttribute("data-target");
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: "smooth", // Smooth scrolling animation
+            block: "start", // Align the top of the element to the top of the viewport
+          });
+        }
+      });
+    });
+  }
 }
