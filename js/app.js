@@ -12,6 +12,7 @@ class Portfolio {
 
       this.ui.renderProjectCards(projectsData);
       this.ui.renderCertificateCards(certificationsData);
+      this.ui.setScrollToView();
 
       let footer = document.getElementsByTagName("footer")[0];
       let footerDate = footer.getElementsByClassName("footerDate")[0];
