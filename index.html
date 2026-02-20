@@ -64,11 +64,11 @@
   <body>
     <main>
       <!-- start navigation -->
-      <nav>
+      <nav class="top-nav">
         <div class="container">
           <div class="flex justify-between items-center">
             <!-- <h1 class="gradient-title">AA</h1> -->
-            <div>
+            <div class="mr-auto">
               <img src="./assets/A.svg" alt="Adebisi" width="40" height="40" />
             </div>
 
@@ -78,20 +78,37 @@
               <a href="javascript:void(0)">About</a>
               <a href="javascript:void(0)">Contact</a>
             </div> -->
-            <ul>
-              <li>
-                <a href="#" data-target="aboutSection" class="gradient-text">
-                  About
-                </a>
-              </li>
-              <li><a href="#" data-target="projectSection">Projects</a></li>
-              <li>
-                <a href="#" data-target="certificationSection"
-                  >Certifications
-                </a>
-              </li>
-              <li><a href="#" data-target="contactSection">Contact </a></li>
-            </ul>
+
+            <button class="hamburger-btn">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="side-nav">
+              <ul class="link-wrapper">
+                <li>
+                  <a href="#" data-target="aboutSection" class="gradient-text">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-target="projectSection" class="gradient-text"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-target="certificationSection"
+                    class="gradient-text"
+                    >Certifications
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-target="contactSection" class="gradient-text"
+                    >Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>

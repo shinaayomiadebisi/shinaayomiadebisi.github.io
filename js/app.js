@@ -12,6 +12,7 @@ class Portfolio {
 
       this.ui.renderProjectCards(projectsData);
       this.ui.renderCertificateCards(certificationsData);
+      this.ui.mobileSidebar();
       this.ui.setScrollToView();
 
       let footer = document.getElementsByTagName("footer")[0];
@@ -23,7 +24,7 @@ class Portfolio {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => {
   const app = new Portfolio();
   app.init();
 });
