@@ -1,4 +1,4 @@
-/* Card */
+/* Start Card */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
@@ -23,7 +23,6 @@
 .card .card-header img {
   width: 100%;
   height: 100%;
-  transition: all 350ms ease;
 }
 
 .card .card-header .overlay-wrapper {
@@ -54,7 +53,7 @@
   text-decoration: none;
   padding: 0.75rem;
   /* backdrop-filter: blur(0.25rem); */
-  /* transition: 0.3s; */
+  transition: 250ms ease;
 }
 .card .card-header .overlay-wrapper a:hover {
   color: #ffffff;
@@ -70,7 +69,7 @@
   background: url("/assets/icon-bg.png") no-repeat center;
   background-size: 100% 100%;
   opacity: 0;
-  transition: 0.5s ease;
+  transition: 0.5s;
 }
 .card:hover .card-header .overlay-wrapper a:hover::before {
   opacity: 1;
@@ -99,6 +98,7 @@
   line-clamp: 1;
   text-overflow: ellipsis;
 }
+/* End Card */
 
 /* Typing */
 .typing {
@@ -110,7 +110,46 @@
   -moz-background-clip: text;
 }
 
-/* Footer */
+/* Start Navigation */
+.side-nav .link-wrapper {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  text-decoration: none;
+}
+.side-nav .link-wrapper a {
+  text-decoration: none;
+}
+.hamburger-btn {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    overflow: hidden;
+    background-color: var(--card-bg);
+    backdrop-filter: blur(3rem);
+    z-index: 1;
+    transition: 300ms ease;
+  }
+  .w-60 {
+    width: 60%;
+  }
+  .side-nav .link-wrapper {
+    flex-direction: column;
+  }
+  .hamburger-btn {
+    display: inline-block;
+  }
+}
+/* End Navigation */
+
+/* Start Footer */
 footer {
   padding: 2rem 0;
 }
@@ -152,3 +191,4 @@ footer a i {
 footer a:hover i {
   color: #ffffff;
 }
+/* End Footer */
