@@ -1,4 +1,5 @@
 import { certificationsData, projectsData } from "./data.js";
+import { LazyLoadImages } from "./lazyLoadImages.js";
 import { UI } from "./ui.js";
 
 class Portfolio {
@@ -15,6 +16,8 @@ class Portfolio {
       this.ui.mobileSidebar();
       this.ui.setScrollToView();
 
+      LazyLoadImages.lazyLoad1();
+
       let footer = document.getElementsByTagName("footer")[0];
       let footerDate = footer.getElementsByClassName("footerDate")[0];
       footerDate.innerHTML = new Date().getFullYear();
@@ -24,7 +27,7 @@ class Portfolio {
   }
 }
 
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const app = new Portfolio();
   app.init();
 });
