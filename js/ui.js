@@ -29,6 +29,7 @@ export class UI {
     console.log("project", project);
     const card = this.projectCard.cloneNode(true);
     card.getElementsByTagName("img")[0].src = project.image;
+    card.getElementsByTagName("img")[0].dataset.src = project.image;
     card.getElementsByTagName("h4")[0].innerHTML = project.title;
     card.getElementsByClassName("description")[0].textContent =
       project.description;
@@ -70,7 +71,7 @@ export class UI {
     card.innerHTML = `
       
         <div class="card-header">
-          <img src="${certificate.image}" loading="lazy" />
+          <img src="${certificate.image}" alt="${certificate.title}" data-src="${certificate.image}" loading="lazy" class="lazy" />
         </div>
         <div class="card-content">
           <h4 class="title">${certificate.title}</h4>
@@ -85,6 +86,25 @@ export class UI {
     certificates.forEach((certificate) => {
       const card = this.createCertificateCard(certificate);
       this.certificatesContainer.appendChild(card);
+    });
+  }
+
+  mobileSidebar() {
+    const hamburgerBtn = document.querySelector(".hamburger-btn");
+    const sidebar = document.querySelector(".side-nav");
+
+    hamburgerBtn.addEventListener("click", (event) => {
+      event.stopPropagation();
+      sidebar.classList.toggle("w-60");
+    });
+
+    document.addEventListener("click", function (event) {
+      const isClickInsideSidebar = sidebar.contains(event.target);
+      const isClickOnToggleBtn = hamburgerBtn.contains(event.target);
+
+      if (!isClickInsideSidebar && !isClickOnToggleBtn) {
+        sidebar.classList.remove("w-60");
+      }
     });
   }
 
