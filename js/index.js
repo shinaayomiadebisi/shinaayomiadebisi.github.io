@@ -12,16 +12,16 @@ myName.forEach(function (span, i) {
 /* ======================= typing animation =========================== */
 var typed = new Typed(".typing", {
   strings: [
-    "Web Developer",
-    "Frontend Developer",
-    "Frontend Engineer",
-    "Backend Developer",
-    "Backend Engineer",
-    "MERN Stack",
-    "Fullstack Developer",
-    "Fullstack Engineer",
+    "Software Engineer",
     "Software Developer",
-    "Software Engineer"
+    "Fullstack Engineer",
+    "Fullstack Developer",
+    "MERN Stack",
+    "Backend Engineer",
+    "Backend Developer",
+    "Frontend Engineer",
+    "Frontend Developer",
+    "Web Developer",
   ],
   typeSpeed: 100,
   BackSpeed: 60,
