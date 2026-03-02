@@ -20,7 +20,7 @@
   --dark-blue: #04081f;
   --gray-300: #d1d5db;
   --card-bg: #ffffff;
-  --grey-text: rgba(0, 0, 0, 0.5);
+  --gray-text: rgba(0, 0, 0, 0.5);
 
   /* --bg-black-900: #d1d5db; */
   --bg-black-900: rgb(241, 245, 241);
@@ -53,7 +53,7 @@
   --red-2: #5a0000;
   --dark-blue: #04081f;
   --card-bg: rgb(255 255 255 / 11%);
-  --grey-text: rgba(255, 255, 255, 0.5);
+  --gray-text: rgba(255, 255, 255, 0.5);
 
   --bg-black-900: #05000a;
   /* --bg-black-900: #151515; */
