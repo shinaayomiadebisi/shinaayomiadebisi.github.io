@@ -16,7 +16,8 @@ const projectsData = [
   {
     id: 3,
     title: "MERN Real Estate",
-    description: "Estate",
+    description:
+      "A real estate platform where a user can sell, buy, or rent a home with availability of discount depending on the client.",
     image: "../assets/projectscreenshots/real-estate.png",
     githubLink: "https://github.com/shinaayomiadebisi/mern-estate",
     liveUrl: "https://mern-estate-hujk.onrender.com",
@@ -25,7 +26,8 @@ const projectsData = [
   {
     id: 4,
     title: "Amazon Clone",
-    description: "",
+    description:
+      "A B2B or B2C platform where buyers and sellers meet with the purpose of trading",
     image: "../assets/projectscreenshots/amazon-clone.png",
     githubLink: "https://github.com/shinaayomiadebisi/amazon_clone_redux",
     liveUrl: "https://amazon-first-clone-me.netlify.app",
