@@ -3,7 +3,7 @@
   transition: 500ms cubic-bezier(0.15, 0.26, 0.45, 0.94);
 }
 
-/* ------------------- Start Card ------------------- */
+/* ================= Start Card ================= */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
@@ -108,9 +108,9 @@
   -webkit-line-clamp: 2; /* Number of lines to show */
   -webkit-box-orient: vertical;
 }
-/* ------------------- End Card ------------------- */
+/* ================= End Card ================= */
 
-/* ------------------- Typing ------------------- */
+/* ================= Typing ================= */
 .typing {
   color: transparent;
   background: var(--purple-yellow-grad);
@@ -120,7 +120,7 @@
   -moz-background-clip: text;
 }
 
-/* ------------------- Start Navigation ------------------- */
+/* ================= Start Navigation ================= */
 .side-nav .link-wrapper {
   list-style-type: none;
   display: flex;
@@ -158,15 +158,15 @@
     font-size: 1.25rem;
   }
 }
-/* ------------------- End Navigation ------------------- */
+/* ================= End Navigation ================= */
 
-/* ------------------- start about me ------------------- */
+/* ================= start about me ================= */
 #aboutSection h4 {
   font-weight: 800;
 }
-/* ------------------- end about me ------------------- */
+/* ================= end about me ================= */
 
-/* ------------------- Start Footer ------------------- */
+/* ================= Start Footer ================= */
 footer {
   padding: 2rem 0;
 }
@@ -208,4 +208,4 @@ footer a i {
 footer a:hover i {
   color: #ffffff;
 }
-/* ------------------- End Footer ------------------- */
+/* ================= End Footer ================= */
