@@ -36,7 +36,7 @@ const projectsData = [
   {
     id: 5,
     title: "Weather App",
-    description: "",
+    description: "A weather application that allows ",
     image: "../assets/projectscreenshots/weather-app.png",
     githubLink: "https://github.com/shinaayomiadebisi/weather-app",
     liveUrl: "https://shina-weather-app.netlify.app",
@@ -45,7 +45,7 @@ const projectsData = [
   {
     id: 6,
     title: "Fire Extinguisher",
-    description: "",
+    description: "Rental fire extinguisher services platform",
     image: "../assets/projectscreenshots/fire-extinguisher.png",
     githubLink:
       "https://github.com/shinaayomiadebisi/fire-extinguisher-retail-nuxt",
@@ -58,7 +58,8 @@ const projectsData = [
   {
     id: 7,
     title: "Ambient Sound Mixer",
-    description: "",
+    description:
+      "Create your perfect atmosphere with this beautiful and intuitive ambient sound mixer. Mix and match various nature sounds, white noise, and ambient audio to enhance focus, relaxation, or sleep.",
     image: "../assets/projectscreenshots/screen.png",
     githubLink: "https://github.com/shinaayomiadebisi/ambient-sound-mixer",
     liveUrl: "https://ambient-sound-mixerr.netlify.app",
@@ -67,7 +68,7 @@ const projectsData = [
   {
     id: 8,
     title: "Kanban js",
-    description: "",
+    description: "K",
     image: "../assets/projectscreenshots/kanban-js.png",
     githubLink: "https://github.com/shinaayomiadebisi/kanban-js",
     liveUrl: "https://kanbanjs-oop-vanilla.netlify.app/",
