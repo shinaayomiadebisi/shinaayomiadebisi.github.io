@@ -36,7 +36,8 @@ const projectsData = [
   {
     id: 5,
     title: "Weather App",
-    description: "A weather application that allows ",
+    description:
+      "A weather application that where you can search for a wether condition from country to a state a a city",
     image: "../assets/projectscreenshots/weather-app.png",
     githubLink: "https://github.com/shinaayomiadebisi/weather-app",
     liveUrl: "https://shina-weather-app.netlify.app",
@@ -45,7 +46,8 @@ const projectsData = [
   {
     id: 6,
     title: "Fire Extinguisher",
-    description: "Rental fire extinguisher services platform",
+    description:
+      "A fire extinguisher rental services platform that allows you to locate a fire extinguisher center when the service is needed",
     image: "../assets/projectscreenshots/fire-extinguisher.png",
     githubLink:
       "https://github.com/shinaayomiadebisi/fire-extinguisher-retail-nuxt",
@@ -68,7 +70,8 @@ const projectsData = [
   {
     id: 8,
     title: "Kanban js",
-    description: "K",
+    description:
+      "Kanban application built with vanilla javascript OOP, that allows creating tickets so easy in order to assign task to a user/ employee",
     image: "../assets/projectscreenshots/kanban-js.png",
     githubLink: "https://github.com/shinaayomiadebisi/kanban-js",
     liveUrl: "https://kanbanjs-oop-vanilla.netlify.app/",
