@@ -19,7 +19,7 @@ export class UI {
       card.classList = `fa-brands ${tool.class}`;
     } else {
       card.textContent = tool.name;
-      card.className = "";
+      card.className = "no-icon";
     }
 
     return card;

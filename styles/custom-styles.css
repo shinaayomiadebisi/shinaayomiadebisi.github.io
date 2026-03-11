@@ -108,6 +108,13 @@
   -webkit-line-clamp: 2; /* Number of lines to show */
   -webkit-box-orient: vertical;
 }
+
+.card .card-content .project-tools .no-icon {
+  background: linear-gradient(var(--btn-bg), var(--btn-bg));
+  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.8rem;
+}
 /* ================= End Card ================= */
 
 /* ================= Typing ================= */

@@ -139,6 +139,9 @@ h6 {
 .heroSection {
   min-height: calc(100lvh - 4rem);
   scroll-snap-type: y mandatory;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .heroSection > div {
   padding: 5rem 0;
