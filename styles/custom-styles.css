@@ -112,6 +112,7 @@
 .card .card-content .project-tools .no-icon {
   background: linear-gradient(var(--btn-bg), var(--btn-bg));
   font-size: 0.75rem;
+  color: rgb(var(--purple-2));
   padding: 0.35rem 0.65rem;
   border-radius: 0.8rem;
 }
