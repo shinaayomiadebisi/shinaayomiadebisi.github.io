@@ -16,7 +16,7 @@ export class UI {
   renderIcon(tool) {
     const card = document.createElement("span");
     if (tool.class) {
-      card.classList = `fa-brands ${tool.class} text-2xl`;
+      card.classList = `fa-brands ${tool.class} text-2xl text-purple`;
     } else {
       card.textContent = tool.name;
       card.className = "no-icon";

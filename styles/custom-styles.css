@@ -115,12 +115,13 @@
   gap: 0.85rem;
 }
 .card .card-content .project-tools .no-icon {
-  background: linear-gradient(var(--btn-bg), var(--btn-bg));
+  background: rgb(19 25 33);
   font-size: 0.75rem;
-  color: rgb(var(--purple-2));
+  color: #ffffff;
   padding: 0.35rem 0.65rem;
-  border-radius: 0.8rem;
+  border-radius: 2rem;
 }
+
 /* ================= End Card ================= */
 
 /* ================= Typing ================= */
