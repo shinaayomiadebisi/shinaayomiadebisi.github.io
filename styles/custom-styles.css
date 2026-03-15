@@ -6,7 +6,7 @@
 /* ================= Start Card ================= */
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   /* max-width: 1200px; /* The grid will not exceed 1200px in width */
   gap: 1.5rem;
 }
@@ -117,6 +117,7 @@
 .card .card-content .project-tools .no-icon {
   background: rgb(19 25 33);
   font-size: 0.75rem;
+  font-family: 600;
   color: #ffffff;
   padding: 0.35rem 0.65rem;
   border-radius: 2rem;
