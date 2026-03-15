@@ -74,7 +74,7 @@
   --grad-color5: #6a0d83;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 968px) {
   :root {
     font-size: 1svw;
   }
@@ -320,7 +320,7 @@ section {
 
 @media (max-width: 768px) {
   .myName {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .header-title {

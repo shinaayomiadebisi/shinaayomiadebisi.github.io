@@ -74,8 +74,24 @@ h6 {
   font-size: 1.125rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
 .text-gray {
   color: var(--gray-text);
+}
+
+.text-purple {
+  color: #8000ff;
+}
+
+.text-yellow {
+  color: rgb(254 189 105);
 }
 
 .font-light {
@@ -109,6 +125,9 @@ h6 {
 }
 .mb-8 {
   margin-bottom: 2rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 .mr-auto {
   margin-right: auto;
@@ -158,5 +177,21 @@ h6 {
   .container {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+.bounce {
+  animation: bouncing 1s infinite;
+}
+
+@keyframes bouncing {
+  0%,
+  100% {
+    transform: translateY(-50%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
