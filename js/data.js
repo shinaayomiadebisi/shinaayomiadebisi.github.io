@@ -8,12 +8,14 @@ const projectsData = [
     githubLink: "https://github.com/shinaayomiadebisi/school-management",
     liveUrl: "",
     tools: [
-      { name: "Javascript", class: "fa-js" },
-      { name: "Node", class: "fa-node" },
       { name: "Typescript", class: "" },
       { name: "Next.JS", class: "" },
       { name: "Docker", class: "fa-docker" },
       { name: "Postgresql", class: "" },
+      { name: "Prisma", class: "" },
+      { name: "Clerk", class: "" },
+      { name: "Tailwind", class: "" },
+      { name: "Javascript", class: "fa-js" },
     ],
   },
   {
@@ -25,10 +27,13 @@ const projectsData = [
     githubLink: "https://github.com/shinaayomiadebisi/mern-estate",
     liveUrl: "https://mern-estate-hujk.onrender.com",
     tools: [
-      { name: "Javascript", class: "fa-js" },
       { name: "Node", class: "fa-node" },
       { name: "Typescript", class: "" },
       { name: "React", class: "fa-react" },
+      { name: "Redux", class: "" },
+      { name: "Cloudinary", class: "" },
+      { name: "Tailwind", class: "" },
+      { name: "Javascript", class: "fa-js" },
     ],
   },
   {
@@ -40,9 +45,13 @@ const projectsData = [
     githubLink: "https://github.com/shinaayomiadebisi/amazon_clone_redux",
     liveUrl: "https://amazon-first-clone-me.netlify.app",
     tools: [
-      { name: "Javascript", class: "fa-js" },
-      { name: "Node", class: "fa-node" },
+      { name: "Next.js", class: "" },
       { name: "Typescript", class: "" },
+      { name: "Redux", class: "" },
+      { name: "Cloudinary", class: "" },
+      { name: "Google Cloud Console", class: "" },
+      { name: "Tailwind", class: "" },
+      { name: "Javascript", class: "fa-js" },
     ],
   },
   {
@@ -54,9 +63,10 @@ const projectsData = [
     githubLink: "https://github.com/shinaayomiadebisi/weather-app",
     liveUrl: "https://shina-weather-app.netlify.app",
     tools: [
+      { name: "Next.js", class: "" },
+      { name: "Typescript", class: "" },
       { name: "Javascript", class: "fa-js" },
       { name: "Node", class: "fa-node" },
-      { name: "Typescript", class: "" },
     ],
   },
   {
@@ -69,7 +79,8 @@ const projectsData = [
       "https://github.com/shinaayomiadebisi/fire-extinguisher-retail-nuxt",
     liveUrl: "https://fire-extinguisher-rent-center-nuxt.netlify.app",
     tools: [
-      { name: "Nuxt", class: "" },
+      { name: "Nuxt.js", class: "" },
+      { name: "Vue", class: "" },
       { name: "Javascript", class: "fa-js" },
       { name: "Pinia", class: "" },
       { name: "Bootstrap", class: "" },
@@ -83,7 +94,10 @@ const projectsData = [
     image: "../assets/projectscreenshots/screen.png",
     githubLink: "https://github.com/shinaayomiadebisi/ambient-sound-mixer",
     liveUrl: "https://ambient-sound-mixerr.netlify.app",
-    tools: [{ name: "Javascript", class: "fa-js" }],
+    tools: [
+      { name: "Vanilla Javascript OOP", class: "" },
+      { name: "Javascript", class: "fa-js" },
+    ],
   },
   {
     id: 8,
@@ -93,7 +107,10 @@ const projectsData = [
     image: "../assets/projectscreenshots/kanban-js.png",
     githubLink: "https://github.com/shinaayomiadebisi/kanban-js",
     liveUrl: "https://kanbanjs-oop-vanilla.netlify.app/",
-    tools: [{ name: "Javascript", class: "fa-js" }],
+    tools: [
+      { name: "Vanilla Javascript OOP", class: "" },
+      { name: "Javascript", class: "fa-js" },
+    ],
   },
 ];
 
