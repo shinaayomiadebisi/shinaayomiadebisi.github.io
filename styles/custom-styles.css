@@ -81,10 +81,10 @@
   opacity: 1;
 }
 
-.card .card-header .overlay-wrapper i {
+.card .card-header .overlay-wrapper i,
+.card .card-header .overlay-wrapper span {
   position: relative;
   z-index: 2;
-  font-size: 1.5rem;
 }
 
 .card .card-content {
@@ -112,13 +112,13 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.5rem 0.85rem;
+  gap: 0.5rem 0.65rem;
 }
 .card .card-content .project-tools .no-icon {
-  background: rgba(19, 25, 33, 0.8);
+  background: var(--text-black-900);
   font-size: 0.75rem;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--bg-black-900);
   padding: 0.35rem 0.65rem;
   border-radius: 2rem;
 }
