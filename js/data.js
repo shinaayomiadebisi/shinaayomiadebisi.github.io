@@ -66,7 +66,10 @@ const projectsData = [
       { name: "Next.js", class: "" },
       { name: "Typescript", class: "" },
       { name: "Javascript", class: "fa-js" },
-      { name: "Node", class: "fa-node" },
+      { name: "Axios", class: "" },
+      { name: "Tailwind", class: "" },
+      { name: "React Query", class: "" },
+      { name: "Jotai", class: "" },
     ],
   },
   {
@@ -97,6 +100,8 @@ const projectsData = [
     tools: [
       { name: "Vanilla Javascript OOP", class: "" },
       { name: "Javascript", class: "fa-js" },
+      { name: "Html5", class: "fa-html5" },
+      { name: "Css3", class: "fa-css3" },
     ],
   },
   {
@@ -110,6 +115,8 @@ const projectsData = [
     tools: [
       { name: "Vanilla Javascript OOP", class: "" },
       { name: "Javascript", class: "fa-js" },
+      { name: "Html5", class: "fa-html5" },
+      { name: "Css3", class: "fa-css3" },
     ],
   },
 ];

@@ -26,7 +26,6 @@ export class UI {
   }
 
   createProjectCard(project) {
-    console.log("project", project);
     const card = this.projectCard.cloneNode(true);
     card.getElementsByTagName("img")[0].src = project.image;
     card.getElementsByTagName("img")[0].dataset.src = project.image;
@@ -57,7 +56,6 @@ export class UI {
   }
 
   renderProjectCards(projects) {
-    console.log(projects);
     // this.projectCardWrapper.innerHTML = "";
     projects.forEach((project) => {
       const card = this.createProjectCard(project);
