@@ -65,11 +65,11 @@ const projectsData = [
     tools: [
       { name: "Next.js", class: "" },
       { name: "Typescript", class: "" },
-      { name: "Javascript", class: "fa-js" },
       { name: "Axios", class: "" },
-      { name: "Tailwind", class: "" },
       { name: "React Query", class: "" },
       { name: "Jotai", class: "" },
+      { name: "Tailwind", class: "" },
+      { name: "Javascript", class: "fa-js" },
     ],
   },
   {
@@ -84,9 +84,9 @@ const projectsData = [
     tools: [
       { name: "Nuxt.js", class: "" },
       { name: "Vue", class: "" },
-      { name: "Javascript", class: "fa-js" },
       { name: "Pinia", class: "" },
       { name: "Bootstrap", class: "" },
+      { name: "Javascript", class: "fa-js" },
     ],
   },
   {

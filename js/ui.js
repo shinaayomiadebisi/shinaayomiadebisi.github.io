@@ -73,7 +73,7 @@ export class UI {
         </div>
         <div class="card-content">
           <h4 class="title">${certificate.title}</h4>
-          <button onclick="location.href='${certificate.certificateSiteUrl}'">View</button>
+          <button style="font-size: 1rem; cursor: pointer;" onclick="location.href='${certificate.certificateSiteUrl}'">View</button>
         </div>
      
     `;
