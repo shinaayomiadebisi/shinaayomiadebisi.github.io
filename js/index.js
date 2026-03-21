@@ -19,6 +19,7 @@ var typed = new Typed(".typing", {
     "MERN Stack",
     "Backend Engineer",
     "Backend Developer",
+    "Mobile Developer",
     "Frontend Engineer",
     "Frontend Developer",
     "Web Developer",
