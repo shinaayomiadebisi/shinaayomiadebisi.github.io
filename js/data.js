@@ -158,6 +158,13 @@ const certificationsData = [
     certificateSiteUrl:
       "https://www.udemy.com/certificate/UC-9c903acb-4367-4846-8c69-aba7e38f3ee2",
   },
+  {
+    id: 6,
+    title: "Introduction To Cybersecurity",
+    image: "../assets/certificates/Introduction-to-cybersecurity.png",
+    certificateSiteUrl:
+      "https://hacka-demy.thinkific.com/certificates/buppq9plav",
+  },
 ];
 
 export { projectsData, certificationsData };
