@@ -181,6 +181,29 @@ h6 {
 .heroSection > div {
   padding: 5rem 0;
   scroll-snap-align: start;
+  perspective: 800px;
+}
+.heroSection > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 1rem;
+  height: 100%;
+  background-color: var(--skin-color);
+  transform: rotate3d(0.05, 1, 1, 45deg);
+  /* transform: rotate3d(0, 1, 0.5, 3.142rad); */
+  /* transform-origin: bottom right 60px; */
+}
+.heroSection > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 15%;
+  width: 1rem;
+  height: 100%;
+  background-color: var(--skin-color);
+  transform: rotate3d(2, -1, -1, -0.2turn);
 }
 /* end hero section */
 
@@ -193,6 +216,10 @@ h6 {
   .container {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .heroSection > div::before,
+  .heroSection > div::after {
+    display: none;
   }
 }
 
