@@ -187,11 +187,11 @@ h6 {
   content: "";
   position: absolute;
   top: 0;
-  left: 15%;
+  left: -5rem;
   width: 1rem;
   height: 100%;
   background-color: var(--skin-color);
-  transform: rotate3d(0.05, 1, 1, 45deg);
+  /* transform: rotate3d(0.05, 1, 1, 45deg); */
   /* transform: rotate3d(0, 1, 0.5, 3.142rad); */
   /* transform-origin: bottom right 60px; */
 }
@@ -199,11 +199,11 @@ h6 {
   content: "";
   position: absolute;
   top: 0;
-  right: 15%;
+  right: -5rem;
   width: 1rem;
   height: 100%;
   background-color: var(--skin-color);
-  transform: rotate3d(2, -1, -1, -0.2turn);
+  /* transform: perspective(1000px) rotate3d(2, -1, -1, -0.2turn); */
 }
 /* end hero section */
 
