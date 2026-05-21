@@ -1,0 +1,94 @@
+.scene {
+  width: 18.75rem;
+  height: 18.75rem;
+  /* perspective: 600px; */
+  perspective: 37.5rem;
+}
+
+.threeD {
+  position: relative;
+  /* width: 300px;
+  height: 300px; */
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  /* transform: rotateX(20deg) rotateY(30deg) rotateZ(10deg); */
+  transition: all 3s ease;
+  /* animation: rotate-cube 12s infinite linear; */
+}
+
+.threeD:hover {
+  transform: rotate3d(1, 1, 1, 180deg);
+  cursor: pointer;
+}
+
+.area {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.8;
+  color: white;
+  font-size: 10em;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  border: solid 1.25rem #2effea;
+  /* background-size: cover; /* Ensures the image covers the face */
+  /* background-position: center; /* Centers the image on the face */
+}
+
+.front {
+  /* transform: translateZ(168px); */
+  transform: translateZ(10.5rem);
+  background: #ff2ed9;
+  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg'); */
+}
+
+.back {
+  /* transform: translateZ(-170px) rotateY(180deg); */
+  transform: translateZ(-10.625rem) rotateY(180deg);
+  background: #c02eff;
+  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg'); */
+}
+
+.left {
+  /* right: 128px; */
+  right: 8rem;
+  transform: rotateY(270deg);
+  background: #f5ff2e;
+  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png'); */
+}
+
+.right {
+  /* left: 168px; */
+  left: 10.5rem;
+  transform: rotateY(90deg);
+  background: #ffab2e;
+  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg'); */
+}
+
+.top {
+  /* bottom: 128px; */
+  bottom: 8rem;
+  transform: rotateX(90deg);
+  background: blue;
+  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg'); */
+}
+
+.bottom {
+  /* top: 168px; */
+  top: 10.5rem;
+  transform: rotateZ(180deg) rotateX(90deg);
+  background: #34eb7d;
+  /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"); */
+}
+
+/* Animation Keyframes */
+@keyframes rotate-cube {
+  from {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}

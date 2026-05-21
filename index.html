@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adebisi Abdullateef</title>
+    <meta
+      name="description"
+      content="Software Engineer, Software Developer, Fullstack Engineer, Fullstack Developer, Backend Engineer, Backend Developer, Frontend Engineer, Frontend Developer, Mobile Developer, Web Developer."
+    />
     <link
       rel="shortcut icon"
       href="./assets/A.svg"
       sizes="32x32"
       type="image/x-icon"
     />
+    <link rel="preload" as="image" href="./assets/A.svg" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/modules.css" />
     <link rel="stylesheet" href="./styles/custom-styles.css" />
@@ -68,13 +73,15 @@
           <div class="flex justify-between items-center">
             <!-- <h1 class="gradient-title">AA</h1> -->
             <div class="mr-auto">
-              <img
-                src="./assets/A.svg"
-                alt="Adebisi"
-                width="40"
-                height="40"
-                style="width: 2.5rem; height: 2.5rem"
-              />
+              <a href="/">
+                <img
+                  src="./assets/A.svg"
+                  alt="Adebisi"
+                  width="40"
+                  height="40"
+                  style="width: 2.5rem; height: 2.5rem"
+                />
+              </a>
             </div>
 
             <!-- <div class="flex">
@@ -121,12 +128,13 @@
 
       <!-- start Hero -->
       <header class="heroSection">
-        <div class="container flex flex-col items-center">
-          <h2 class="bounce font-bold mb-5 text-purple">Hello! 👋</h2>
-          <h1 class="text-center mb-5 text-yellow">Welcome to my world!</h1>
-          <!-- <h1 id="welcome">Welcome to my world</h1> -->
+        <div class="flex-1 container flex items-center md-flex-row">
+          <div class="flex-1 lg-col-center">
+            <h2 class="bounce font-bold mb-5 text-purple">Hello! 👋</h2>
+            <h1 class="mb-5 text-yellow">Welcome to my world!</h1>
+            <!-- <h1 id="welcome">Welcome to my world</h1> -->
 
-          <!-- <div>
+            <!-- <div>
             <svg class="text_outline">
               <symbol id="text_container">
                 <text
@@ -145,23 +153,31 @@
             </svg>
           </div> -->
 
-          <h3 class="mb-5">I am</h3>
-          <h2 class="mb-5">
-            <span class="myName">
-              <span aria-hidden="true">A</span><span aria-hidden="true">d</span
-              ><span aria-hidden="true">e</span><span aria-hidden="true">b</span
-              ><span aria-hidden="true">i</span><span aria-hidden="true">s</span
-              ><span aria-hidden="true">i</span>
+            <h3 class="mb-5">I am</h3>
+            <h2 class="mb-5">
+              <span class="myName">
+                <span aria-hidden="true">A</span
+                ><span aria-hidden="true">d</span
+                ><span aria-hidden="true">e</span
+                ><span aria-hidden="true">b</span
+                ><span aria-hidden="true">i</span
+                ><span aria-hidden="true">s</span
+                ><span aria-hidden="true">i</span>
 
-              <span aria-hidden="true">A</span><span aria-hidden="true">b</span
-              ><span aria-hidden="true">d</span><span aria-hidden="true">u</span
-              ><span aria-hidden="true">l</span><span aria-hidden="true">l</span
-              ><span aria-hidden="true">a</span><span aria-hidden="true">t</span
-              ><span aria-hidden="true">e</span><span aria-hidden="true">e</span
-              ><span aria-hidden="true">f</span>
-            </span>
-          </h2>
-          <!-- <p>
+                <span aria-hidden="true">A</span
+                ><span aria-hidden="true">b</span
+                ><span aria-hidden="true">d</span
+                ><span aria-hidden="true">u</span
+                ><span aria-hidden="true">l</span
+                ><span aria-hidden="true">l</span
+                ><span aria-hidden="true">a</span
+                ><span aria-hidden="true">t</span
+                ><span aria-hidden="true">e</span
+                ><span aria-hidden="true">e</span
+                ><span aria-hidden="true">f</span>
+              </span>
+            </h2>
+            <!-- <p>
             <span class="myName">
               <span aria-hidden="true">(</span><span aria-hidden="true">S</span
               ><span aria-hidden="true">h</span><span aria-hidden="true">i</span
@@ -173,27 +189,37 @@
             </span>
           </p> -->
 
-          <h3 class="mb-5">A</h3>
-          <h1 class="mb-5">
-            <span class="typing">Software Engineer</span>
-          </h1>
-          <p
-            class="text-lg text-center text-gray mb-6"
-            style="max-width: 50rem"
-          >
-            Proven ability to bridge front/back-end gaps, optimize performance,
-            and deliver robust software. Doing logic is now a way of life that I
-            engage in every day by day.
-          </p>
-          <!-- <p class="text-center" style="max-width: 50rem">
+            <h1 class="mb-5">
+              <span class="md-hide">A</span>
+              <span class="typing">Software Engineer</span>
+            </h1>
+            <p class="text-lg text-gray mb-6" style="max-width: 50rem">
+              Proven ability to bridge front/back-end gaps, optimize
+              performance, and deliver robust software application. Doing logic
+              is now a way of life that I engage in every day by day.
+            </p>
+            <!-- <p class="text-center" style="max-width: 50rem">
             I transform design into a dynamic dimension that facilitate
             simplicity, smooth, and good user experience. Doing logic is now a
             way of life that i engage in every day by day.
           </p> -->
 
-          <a data-target="aboutSection">
-            <button class="gradient-btn">Hire me</button>
-          </a>
+            <a data-target="aboutSection">
+              <button class="gradient-btn">Hire me</button>
+            </a>
+          </div>
+          <div class="flex-1 flex justify-center items-center lg-hide">
+            <div class="scene">
+              <div class="threeD">
+                <div class="area front">1</div>
+                <div class="area back">2</div>
+                <div class="area left">3</div>
+                <div class="area right">4</div>
+                <div class="area top">5</div>
+                <div class="area bottom">6</div>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
       <!-- end Hero -->
@@ -204,13 +230,13 @@
           <h1 class="header-title text-center">
             <span class="gradient-title">About me</span>
           </h1>
-          <div class="flex gap-5 items-center">
-            <div class="flex-1">
-              <h2>My name is Adebisi Abdullateef</h2>
-              <h2 class="mb-6">
+          <div class="flex gap-12 items-center">
+            <div class="flex-1 lg-col-center">
+              <h1 class="mb-2">My name is Adebisi Abdullateef</h1>
+              <h3 class="text-xl mb-5">
                 <span class="gradient-text">A Software Engineer</span>
-              </h2>
-              <p class="text-lg text-gray mb-8">
+              </h3>
+              <p class="text-base text-gray mb-8">
                 I am a passionate Software Engineer focused on building modern,
                 scalable, and performance application. I enjoy building sleek,
                 interactive websites. I build modern, scalable web applications.
@@ -220,35 +246,37 @@
 
               <div class="flex flex-col gap-3 mb-8">
                 <div>
-                  <h4 class="text-lg">Language that I speak:</h4>
-                  <p class="text-gray">
+                  <h4 class="text-lg mb-1">Language that I speak:</h4>
+                  <p class="text-sm text-gray">
                     HTML, CSS, Javascript, Typescript, SQL, C#
                   </p>
                 </div>
                 <div>
-                  <h4 class="text-lg">Frontend:</h4>
-                  <p class="text-gray">
+                  <h4 class="text-lg mb-1">Frontend:</h4>
+                  <p class="text-sm text-gray">
                     JavaScript (ES6+), TypeScript, React, Next.js, React Native,
                     Redux, Zustand, GraphQL, Nuxt.js, Vue, Jest, ReactTesting
                     Library, Vitest.
                   </p>
                 </div>
                 <div>
-                  <h4 class="text-lg">Backend:</h4>
-                  <p class="text-gray">
+                  <h4 class="text-lg mb-1">Backend:</h4>
+                  <p class="text-sm text-gray">
                     Node.js, NestJS, Express, RESTful APIs, GraphQL,
                     Microservices, ASP.NET.
                   </p>
                 </div>
                 <div>
-                  <h4 class="text-lg">Databases/DevOps:</h4>
-                  <p class="text-gray">
+                  <h4 class="text-lg mb-1">Databases/DevOps:</h4>
+                  <p class="text-sm text-gray">
                     PostgreSQL, MySQL, MongoDB, Docker, AWS, CI/CD.
                   </p>
                 </div>
                 <div>
-                  <h4 class="text-lg">Dev Tools:</h4>
-                  <p class="text-gray">Visual Studio Code, Terminal, Git</p>
+                  <h4 class="text-lg mb-1">Dev Tools:</h4>
+                  <p class="text-sm text-gray">
+                    Visual Studio Code, Terminal, Git
+                  </p>
                 </div>
               </div>
 
@@ -413,7 +441,7 @@
 
           <p class="text-center text-gray text-sm font-light">
             ©<span class="footerDate"></span> All rights reserved. Adebisi
-            Abdullateef (Shinaayomi)
+            Abdullateef Shinaayomi
           </p>
         </div>
       </footer>
@@ -449,5 +477,21 @@
     <script src="./js/style-switcher.js"></script>
     <script src="./js/index.js"></script>
     <script defer type="module" src="./js/app.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "searching for software developer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Software developer"
+            }
+          }
+        ]
+      }
+    </script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+@import url("threeD-box.css");
+
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@100;200;300;400;500;600&display=swap");
 
 @font-face {
@@ -74,7 +76,7 @@
   --grad-color5: #6a0d83;
 }
 
-@media (min-width: 968px) {
+@media (min-width: 1024px) {
   :root {
     font-size: 1svw;
   }
