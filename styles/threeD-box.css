@@ -41,14 +41,12 @@
   /* transform: translateZ(168px); */
   transform: translateZ(10.5rem);
   background: #ff2ed9;
-  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg'); */
 }
 
 .back {
   /* transform: translateZ(-170px) rotateY(180deg); */
   transform: translateZ(-10.625rem) rotateY(180deg);
   background: #c02eff;
-  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg'); */
 }
 
 .left {
@@ -56,7 +54,6 @@
   right: 8rem;
   transform: rotateY(270deg);
   background: #f5ff2e;
-  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png'); */
 }
 
 .right {
@@ -64,7 +61,6 @@
   left: 10.5rem;
   transform: rotateY(90deg);
   background: #ffab2e;
-  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg'); */
 }
 
 .top {
@@ -72,7 +68,6 @@
   bottom: 8rem;
   transform: rotateX(90deg);
   background: blue;
-  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg'); */
 }
 
 .bottom {
@@ -80,8 +75,49 @@
   top: 10.5rem;
   transform: rotateZ(180deg) rotateX(90deg);
   background: #34eb7d;
-  /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"); */
 }
+
+/* With background image */
+
+/* .front {
+  transform: translateZ(10.5rem);
+  background: #ff2ed9;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg");
+}
+
+.back {
+  transform: translateZ(-10.625rem) rotateY(180deg);
+  background: #c02eff;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg");
+}
+
+.left {
+  right: 8rem;
+  transform: rotateY(270deg);
+  background: #f5ff2e;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png");
+}
+
+.right {
+  left: 10.5rem;
+  transform: rotateY(90deg);
+  background: #ffab2e;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg");
+}
+
+.top {
+  bottom: 8rem;
+  transform: rotateX(90deg);
+  background: blue;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg");
+}
+
+.bottom {
+  top: 10.5rem;
+  transform: rotateZ(180deg) rotateX(90deg);
+  background: #34eb7d;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg");
+} */
 
 /* Animation Keyframes */
 @keyframes rotate-cube {
