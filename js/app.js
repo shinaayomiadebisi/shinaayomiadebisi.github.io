@@ -1,10 +1,12 @@
 import { certificationsData, projectsData } from "./data.js";
 import { LazyLoadImages } from "./lazyLoadImages.js";
 import { UI } from "./ui.js";
+import { Helper } from "./helper.js";
 
 class Portfolio {
   constructor() {
     this.ui = new UI();
+    this.helper = new Helper();
   }
 
   async init() {
@@ -17,6 +19,8 @@ class Portfolio {
       this.ui.setScrollToView();
 
       LazyLoadImages.lazyLoad1();
+
+      this.helper.onScrollEvents();
 
       let footer = document.getElementsByTagName("footer")[0];
       let footerDate = footer.getElementsByClassName("footerDate")[0];
