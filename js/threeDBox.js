@@ -33,4 +33,15 @@ export class ThreeDBox {
       card.addEventListener("mouseleave", resetStyles);
     }
   }
+
+  threeDBoxAnimationState() {
+    const cube = document.querySelector(".threeD");
+    const scene = document.querySelector(".scene");
+    let isPaused = false;
+
+    scene.addEventListener("touchstart", () => {
+      isPaused = !isPaused;
+      cube.style.animationPlayState = isPaused ? "paused" : "running";
+    });
+  }
 }

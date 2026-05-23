@@ -92,6 +92,10 @@ body {
   color: var(--text-black-900);
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .gradient-btn {
   /* background: var(--btn-bg); */
   color: var(--btn-color);
