@@ -34,7 +34,7 @@ export class ThreeDBox {
     }
   }
 
-  threeDBoxAnimationState() {
+  threeDBoxAnimationStatePauseOnMobile() {
     const cube = document.querySelector(".threeD");
     const scene = document.querySelector(".scene");
     let isPaused = false;
