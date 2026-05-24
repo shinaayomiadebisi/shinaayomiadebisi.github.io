@@ -76,8 +76,8 @@
 /* With background image */
 
 .scene {
-  width: 12.5rem;
-  height: 12.5rem;
+  width: 16.5rem;
+  height: 16.5rem;
   perspective: 37.5rem;
 }
 
@@ -89,8 +89,9 @@
   animation: rotate-cube 12s infinite linear;
 }
 
-.threeD:hover {
+.scene:hover .threeD {
   transform: rotate3d(1, 1, 1, 180deg);
+  animation-play-state: paused;
   cursor: pointer;
 }
 
@@ -99,53 +100,43 @@
   height: 100%;
   position: absolute;
   opacity: 0.8;
-  color: white;
+  color: transparent;
   font-size: 10em;
   display: grid;
   align-items: center;
   text-align: center;
-  border: solid 1.25rem #2effea;
+  border: solid 0.15rem #2effea;
   background-size: cover; /* Ensures the image covers the face */
   background-position: center; /* Centers the image on the face */
 }
 
 .front {
-  transform: translateZ(10.5rem);
-
+  transform: translateZ(8.25rem);
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg");
 }
 
 .back {
-  transform: translateZ(-10.625rem) rotateY(180deg);
-  background: #c02eff;
+  transform: translateZ(-8.25rem) rotateY(180deg);
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg");
 }
 
 .left {
-  right: 8rem;
-  transform: rotateY(270deg);
-  background: #f5ff2e;
+  transform: rotateY(270deg) translateZ(8.25rem);
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png");
 }
 
 .right {
-  left: 10.5rem;
-  transform: rotateY(90deg);
-  background: #ffab2e;
+  transform: rotateY(90deg) translateZ(8.25rem);
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg");
 }
 
 .top {
-  bottom: 8rem;
-  transform: rotateX(90deg);
-  background: blue;
+  transform: rotateX(90deg) translateZ(8.25rem);
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg");
 }
 
 .bottom {
-  top: 10.5rem;
-  transform: rotateZ(180deg) rotateX(90deg);
-  background: #34eb7d;
+  transform: rotateZ(180deg) rotateX(90deg) translateZ(8.25rem);
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg");
 }
 
