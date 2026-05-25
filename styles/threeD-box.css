@@ -90,7 +90,7 @@
 }
 
 .scene:hover .threeD {
-  transform: rotate3d(1, 1, 1, 180deg);
+  /* transform: rotate3d(1, 1, 1, 180deg); */
   animation-play-state: paused;
   cursor: pointer;
 }
@@ -127,7 +127,7 @@
 
 .right {
   transform: rotateY(90deg) translateZ(8.25rem);
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/960px-Typescript_logo_2020.svg.png");
 }
 
 .top {
