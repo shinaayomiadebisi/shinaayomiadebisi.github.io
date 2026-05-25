@@ -25,7 +25,7 @@ export class ThreeDBox {
       card.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
     }
 
-    const card = document.querySelector(".card");
+    // const card = document.querySelector(".card");
     const motionMatchMedia = window.matchMedia("(prefers-reduced-motion)");
 
     if (!motionMatchMedia.matches) {

@@ -19,7 +19,7 @@ class Portfolio {
       this.ui.mobileSidebar();
       this.ui.setScrollToView();
 
-      LazyLoadImages.lazyLoad1();
+      await LazyLoadImages.lazyLoad1();
 
       this.helper.onScrollEvents();
 
