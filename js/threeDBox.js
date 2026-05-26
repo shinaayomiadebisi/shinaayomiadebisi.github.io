@@ -1,37 +1,41 @@
 export class ThreeDBox {
-  //   @media (prefers-reduced-motion) {
-  //   .card {
-  //     transform: none !important;
-  //   }
-  // }
-  render3DBox() {
-    const card = document.querySelector(".threeD");
-    const THRESHOLD = 15;
+  threeDRotateSides() {
+    const hoverArea = document.querySelector(".threeD-hover-area");
+    const box = document.querySelector(".threeD");
+    const maxRotation = 60; // Max rotation angle in degrees
 
-    function handleHover(e) {
-      const { clientX, clientY, currentTarget } = e;
-      const { clientWidth, clientHeight } = currentTarget;
-      const offsetLeft = currentTarget.getBoundingClientRect().left;
-      const offsetTop = currentTarget.getBoundingClientRect().top;
+    hoverArea.addEventListener("mousemove", (e) => {
+      // Get positions and dimensions of the container
+      const rect = hoverArea.getBoundingClientRect();
 
-      const horizontal = (clientX - offsetLeft) / clientWidth;
-      const vertical = (clientY - offsetTop) / clientHeight;
+      // Find the exact center point of the container
+      const width = rect.width;
+      const height = rect.height;
+      const centerX = rect.left + width / 2;
+      const centerY = rect.top + height / 2;
 
-      const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
-      const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
-    }
+      // Calculate distance from center (-1 to 1)
+      const percentX = (e.clientX - centerX) / (width / 2);
+      const percentY = (e.clientY - centerY) / (height / 2);
 
-    function resetStyles(e) {
-      card.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
-    }
+      // Convert percentage to degrees
+      const rotateX = -percentY * maxRotation;
+      const rotateY = percentX * maxRotation;
 
-    // const card = document.querySelector(".card");
-    const motionMatchMedia = window.matchMedia("(prefers-reduced-motion)");
+      // Apply the transformation
+      box.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
 
-    if (!motionMatchMedia.matches) {
-      card.addEventListener("mousemove", handleHover);
-      card.addEventListener("mouseleave", resetStyles);
-    }
+    // Reset the box seamlessly when the mouse leaves the area
+    hoverArea.addEventListener("mouseleave", () => {
+      box.style.transition = "transform 0.5s ease"; // Smooth reset animation
+      box.style.transform = "rotateX(0deg) rotateY(0deg)";
+    });
+
+    // Re-enable fast transition when mouse re-enters
+    hoverArea.addEventListener("mouseenter", () => {
+      box.style.transition = "transform 0.1s ease-out";
+    });
   }
 
   threeDBoxAnimationStatePauseOnMobile() {

@@ -75,6 +75,12 @@
 
 /* With background image */
 
+/* Acts as the tracking boundary */
+.threeD-hover-area {
+  padding: 5rem; /* Gives extra padding so rotation doesn't instantly lose hover */
+  cursor: pointer;
+}
+
 .scene {
   width: 16.5rem;
   height: 16.5rem;
