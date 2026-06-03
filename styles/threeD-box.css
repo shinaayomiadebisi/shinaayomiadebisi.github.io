@@ -112,7 +112,7 @@
   align-items: center;
   text-align: center;
   border: solid 0.15rem #2effea;
-  background-size: cover; /* Ensures the image covers the face */
+  background-size: 100% 100%; /* Ensures the image covers the face */
   background-position: center; /* Centers the image on the face */
 }
 
@@ -154,4 +154,17 @@
   to {
     transform: rotateY(360deg) rotateX(360deg);
   }
+
+  /* 0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  30% {
+    transform: rotateY(360deg) rotateX(0deg);
+  }
+  70% {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+  100% {
+    transform: rotateY(0deg) rotateX(0deg);
+  } */
 }
