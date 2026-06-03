@@ -67,8 +67,9 @@
 .card .card-header .overlay-wrapper a {
   position: relative;
   color: #000000;
+  font-size: 0.85rem;
   text-decoration: none;
-  padding: 0.75rem 0.25rem;
+  padding: 0.65rem 0.25rem;
   /* backdrop-filter: blur(0.25rem); */
   transition: 250ms ease;
 }
