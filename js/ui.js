@@ -3,6 +3,7 @@ export class UI {
     this.projectCardWrapper = null;
     this.projectCard = null;
     this.certificatesContainer = null;
+    this.mobileSidebarContainer = null;
   }
 
   init() {
@@ -11,6 +12,7 @@ export class UI {
     this.certificatesContainer = document.querySelector(
       ".certificates-wrapper",
     );
+    this.mobileSidebarContainer = document.querySelector(".side-nav");
   }
 
   renderIcon(tool) {
@@ -90,7 +92,7 @@ export class UI {
 
   mobileSidebar() {
     const hamburgerBtn = document.querySelector(".hamburger-btn");
-    const sidebar = document.querySelector(".side-nav");
+    const sidebar = this.mobileSidebarContainer;
 
     hamburgerBtn.addEventListener("click", (event) => {
       event.stopPropagation();
@@ -108,10 +110,11 @@ export class UI {
   }
 
   setScrollToView() {
+    const sidebar = this.mobileSidebarContainer;
+
     document.querySelectorAll("a[data-target]").forEach((anchor) => {
       anchor.addEventListener("click", function (e) {
         e.preventDefault(); // Prevent the default anchor link behavior
-
         const targetId = this.getAttribute("data-target");
         const targetElement = document.getElementById(targetId);
 
@@ -121,11 +124,13 @@ export class UI {
             block: "start", // Align the top of the element to the top of the viewport
           });
         }
+
+        sidebar.classList.remove("w-60");
       });
     });
   }
   setScrollToView2() {
-    document.querySelectorAll('a[href^="#"').forEach((anchor) => {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", function (e) {
         e.preventDefault();
         document
