@@ -86,6 +86,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   font-family: Poppins, sans-serif;
   background-color: var(--bg-black-900);
