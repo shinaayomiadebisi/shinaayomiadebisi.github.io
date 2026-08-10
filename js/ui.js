@@ -28,6 +28,7 @@ export class UI {
   }
 
   createProjectCard(project) {
+    // container.append(this.projectCard.content.cloneNode(true));
     const card = this.projectCard.cloneNode(true);
     card.getElementsByTagName("img")[0].src = project.image;
     card.getElementsByTagName("img")[0].dataset.src = project.image;
@@ -67,15 +68,15 @@ export class UI {
 
   createCertificateCard(certificate) {
     const card = document.createElement("div");
-    card.className = "card";
+    card.className = "card flex flex-col";
     card.innerHTML = `
       
         <div class="card-header">
           <img src="${certificate.image}" alt="${certificate.title}" data-src="${certificate.image}" loading="lazy" class="lazy" />
         </div>
-        <div class="card-content">
+        <div class="card-content flex flex-col h-full flex-1 items-start">
           <h4 class="title">${certificate.title}</h4>
-          <button style="font-size: 1rem; cursor: pointer;" onclick="location.href='${certificate.certificateSiteUrl}'">View</button>
+          <button class="mt-auto" style="font-size: 1rem; cursor: pointer;" onclick="location.href='${certificate.certificateSiteUrl}'">View</button>
         </div>
      
     `;
@@ -134,8 +135,21 @@ export class UI {
       anchor.addEventListener("click", function (e) {
         e.preventDefault();
         document
-          .querySelector(this.getAttribute("href"))
+          .getElementById(this.getAttribute("href"))
           .scrollIntoView({ behavior: "smooth" });
+        // const targetId = this.getAttribute("href");
+
+        // // Skip placeholder links that are just "#"
+        // if (targetId === "#") return;
+
+        // // const targetElement = document.querySelector(targetId);
+        // const targetElement = document.getElementById(targetId);
+
+        // // Only scroll if the target element actually exists on the page
+        // if (targetElement) {
+        //   e.preventDefault();
+        //   targetElement.scrollIntoView({ behavior: "smooth" });
+        // }
       });
     });
   }
