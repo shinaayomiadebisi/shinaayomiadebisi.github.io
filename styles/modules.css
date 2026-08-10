@@ -8,6 +8,10 @@ h6 {
   margin: 0;
 }
 
+.h-full {
+  height: 100%;
+}
+
 /* Flex Property */
 .flex {
   display: flex;
@@ -27,6 +31,10 @@ h6 {
 
 .items-center {
   align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -167,6 +175,9 @@ h6 {
 .mx-auto {
   margin-right: auto;
   margin-left: auto;
+}
+.mt-auto {
+  margin-top: auto;
 }
 .md-flex-row {
   flex-direction: row;
