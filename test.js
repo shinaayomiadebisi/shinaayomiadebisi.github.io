@@ -8,4 +8,4 @@ function reverseWords() {
   return newWords;
 }
 reverseWords();
-console.log(reverseWords(), "reverseWord");
+console.log(reverseWords(), "reverseWords");
