@@ -1,7 +1,7 @@
 export class LazyLoadImages {
   constructor() {}
 
-  static lazyLoad1() {
+  static async lazyLoad1() {
     // Select all images with the 'lazy' class
     const lazyImages = document.querySelectorAll("img.lazy");
     if (!lazyImages) {
@@ -23,11 +23,11 @@ export class LazyLoadImages {
           // Swap the data-src value into the src attribute to trigger loading
           img.src = img.dataset.src;
           // Optional: add a load event listener to remove a placeholder blur effect
-          img.addEventListener("load", () => {
+          await img.addEventListener("load", () => {
             img.classList.remove("lazy"); // remove the 'lazy' class after loading
           });
           // Stop observing the image once it has loaded
-          observer.unobserve(img);
+          await observer.unobserve(img);
         }
       });
     };
@@ -39,7 +39,7 @@ export class LazyLoadImages {
     );
 
     // Start observing all target images
-    lazyImages.forEach((image) => {
+    await lazyImages.forEach((image) => {
       observer.observe(image);
     });
   }
