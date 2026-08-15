@@ -1,7 +1,7 @@
 export class LazyLoadImages {
   constructor() {}
 
-  static async lazyLoad1() {
+  static lazyLoad1() {
     // Select all images with the 'lazy' class
     const lazyImages = document.querySelectorAll("img.lazy");
     if (!lazyImages) {
@@ -39,7 +39,7 @@ export class LazyLoadImages {
     );
 
     // Start observing all target images
-    await lazyImages.forEach((image) => {
+    lazyImages.forEach((image) => {
       observer.observe(image);
     });
   }
