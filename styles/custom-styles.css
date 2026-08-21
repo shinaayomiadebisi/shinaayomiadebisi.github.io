@@ -20,6 +20,17 @@
   }
 }
 
+/* Initial state: hidden and slightly transparent */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* Force layout recalculation to trigger the transition */
+img.fade-in {
+  opacity: 1;
+}
+
 .scroll-indicator {
   position: fixed;
   top: 0%;
