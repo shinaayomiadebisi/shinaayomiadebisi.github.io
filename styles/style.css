@@ -84,6 +84,7 @@
 
 html {
   scroll-behavior: smooth;
+  /* overscroll-behavior: ; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
